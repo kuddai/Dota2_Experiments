@@ -1,11 +1,14 @@
 __author__ = 'kuddai'
 from collections import defaultdict
 
-class TeamPairsContainer:
-    def __init__(self):
+class TeamPairsContainer(object):
+    def __init__(self, team_pairs = None):
         #the keys must be two sorted heroes ID.
         #Default values - wins: 0, loses: 0
-        self.team_pairs = defaultdict(lambda: [0, 0])
+        if team_pairs is None:
+            team_pairs = {}
+
+        self.team_pairs = defaultdict(lambda: [0, 0], team_pairs)
 
     def get_wins_loses(self, hero1_ID, hero2_ID):
         raise NotImplementedError()
@@ -25,8 +28,8 @@ class TeamPairsContainer:
         return num_win + num_lose
 
 class OppositeTeamPairsContainer(TeamPairsContainer):
-    def __init__(self):
-        super(OppositeTeamPairsContainer, self).__init__()
+    def __init__(self, opposite_team_pairs = None):
+        super(OppositeTeamPairsContainer, self).__init__(opposite_team_pairs)
 
     def get_wins_loses(self, hero1_ID, hero2_ID):
         """
@@ -57,8 +60,8 @@ class OppositeTeamPairsContainer(TeamPairsContainer):
         self.increment_win(won_hero2_ID, lost_hero1_ID)
 
 class SameTeamPairsContainer(TeamPairsContainer):
-    def __init__(self):
-        super(SameTeamPairsContainer, self).__init__()
+    def __init__(self, same_team_pairs = None):
+        super(SameTeamPairsContainer, self).__init__(same_team_pairs)
 
     def get_wins_loses(self, hero1_ID, hero2_ID):
         """
@@ -79,7 +82,7 @@ class SameTeamPairsContainer(TeamPairsContainer):
         score[inc_index] += 1
 
     def increment_win(self, won_hero1_ID, won_hero2_ID):
-        self.increment(won_hero1_ID, won_hero2_ID, 0)
+        self.__increment(won_hero1_ID, won_hero2_ID, 0)
 
     def increment_lose(self, lost_hero1_ID, lost_hero2_ID):
-        self.increment(lost_hero1_ID, lost_hero2_ID, 1)
+        self.__increment(lost_hero1_ID, lost_hero2_ID, 1)
