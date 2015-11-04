@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d3c6f9e-238a-4a43-b71a-22a4b9a4ff0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TermResolver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_teamPairsContainer.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_oppositeTeamPairsContainer.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py" afterPath="$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py" afterPath="$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/test_teamPairsContainer.py" afterPath="$PROJECT_DIR$/tests/test_TeamsPairsContainer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PairsContainer.py" afterPath="$PROJECT_DIR$/PairsContainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TermResolver.py" afterPath="$PROJECT_DIR$/TermResolver.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DOTA_2_recommendation_engine.iws" />
@@ -24,7 +21,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DOTA_2_recommendation_engine$Unittests_in_test_oppositeTeamPairsContainer.coverage" NAME="Unittests in  Coverage Results" MODIFIED="1446619226729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/DOTA_2_recommendation_engine$Unittests_in_test_oppositeTeamPairsContainer.coverage" NAME="Unittests in  Coverage Results" MODIFIED="1446622386321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/DOTA_2_recommendation_engine$Unittests_in_test_sameTeamPairsContainer.coverage" NAME="Unittests in test_sameTeamPairsContainer Coverage Results" MODIFIED="1446618980338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DOTA_2_recommendation_engine$Unittests_in_TestSameTeamPairsContainer.coverage" NAME="Unittests in TestSameTeamPairsContainer Coverage Results" MODIFIED="1446618694981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DOTA_2_recommendation_engine$Unittests_in_TestOppositeTeamPairsContainer.coverage" NAME="Unittests in TestOppositeTeamPairsContainer Coverage Results" MODIFIED="1446618124237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/PairsContainer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -63,18 +60,20 @@
       <file leaf-file-name="TermResolver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TermResolver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-0.03610675">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_teamPairsContainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_teamPairsContainer.py">
+      <file leaf-file-name="test_TeamsPairsContainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_TeamsPairsContainer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -82,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_sameTeamPairsContainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py">
+      <file leaf-file-name="test_SameTeamsPairsContainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -94,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_oppositeTeamPairsContainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py">
+      <file leaf-file-name="test_DifferentTeamsPairsContainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="59" />
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -133,11 +132,13 @@
       <list>
         <option value="$PROJECT_DIR$/dota2_crawler.py" />
         <option value="$PROJECT_DIR$/hero_stat.py" />
-        <option value="$PROJECT_DIR$/PairsContainer.py" />
         <option value="$PROJECT_DIR$/test_teamPairsContainer.py" />
         <option value="$PROJECT_DIR$/test_oppositeTeamPairsContainer.py" />
         <option value="$PROJECT_DIR$/test_sameTeamPairsContainer.py" />
         <option value="$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py" />
+        <option value="$PROJECT_DIR$/PairsContainer.py" />
+        <option value="$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py" />
+        <option value="$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py" />
         <option value="$PROJECT_DIR$/TermResolver.py" />
       </list>
     </option>
@@ -241,7 +242,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DOTA_2_recommendation_engine" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py" />
       <option name="CLASS_NAME" value="TestOppositeTeamPairsContainer" />
       <option name="METHOD_NAME" value="test_increment_lose_ordered_keys" />
       <option name="FOLDER_NAME" value="" />
@@ -264,7 +265,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DOTA_2_recommendation_engine" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py" />
       <option name="CLASS_NAME" value="TestOppositeTeamPairsContainer" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -287,7 +288,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DOTA_2_recommendation_engine" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py" />
       <option name="CLASS_NAME" value="TestSameTeamPairsContainer" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -299,7 +300,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test_sameTeamPairsContainer" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in test_SameTeamsPairsContainer" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -310,7 +311,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DOTA_2_recommendation_engine" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -537,13 +538,13 @@
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestOppositeTeamPairsContainer.test_increment_lose_ordered_keys" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestOppositeTeamPairsContainer" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestSameTeamPairsContainer" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_sameTeamPairsContainer" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_SameTeamsPairsContainer" />
       <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in " />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in " />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_sameTeamPairsContainer" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_SameTeamsPairsContainer" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestOppositeTeamPairsContainer.test_increment_lose_ordered_keys" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestSameTeamPairsContainer" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TestOppositeTeamPairsContainer" />
@@ -578,7 +579,7 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298351" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25750396" sideWeight="0.5089058" order="2" side_tool="true" content_ui="tabs" />
@@ -588,7 +589,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33412322" sideWeight="0.49109414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25413534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25413534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -645,30 +646,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_oppositeTeamPairsContainer.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_DifferentTeamsPairsContainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="59" />
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_teamPairsContainer.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_SameTeamsPairsContainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_sameTeamPairsContainer.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_TeamsPairsContainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -678,16 +679,18 @@
     <entry file="file://$PROJECT_DIR$/PairsContainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TermResolver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-0.03610675">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
