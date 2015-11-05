@@ -1,7 +1,9 @@
 from collections import defaultdict
+from abc import ABCMeta, abstractmethod
 __author__ = 'kuddai'
 
 class TermResolver(object):
+    __metaclass__ = ABCMeta
 
     def __init__(self, team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs):
         assert team_offset > 0
@@ -41,8 +43,9 @@ class TermResolver(object):
     def __is_opposite_team(self, *hero_ids):
         return all(hero_id >= self.team_offset for hero_id in hero_ids)
 
-    def __get_term(self, positive_odds, negative_odds):
-        return (positive_odds, negative_odds)
+    @abstractmethod
+    def get_term(self, positive_odds, negative_odds):
+        pass
 
     def __get_our_win_odds(self, *hero_ids):
         if self.__is_our_team(*hero_ids):
@@ -56,7 +59,7 @@ class TermResolver(object):
         key = (key,) if isinstance(key, int) else key
         assert len(key) == 1 or len(key) == 2
         win_count, lose_count = self.__get_our_win_odds(*key)
-        return self.__get_term(win_count, lose_count)
+        return self.get_term(win_count, lose_count)
 
 class FractionTermResolver(TermResolver):
 
@@ -64,14 +67,14 @@ class FractionTermResolver(TermResolver):
         super(FractionTermResolver, self).__init__(team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs)
         self.eps = smoothing
 
-    def __get_term(self, positive_odds, negative_odds):
+    def get_term(self, positive_odds, negative_odds):
         return (positive_odds + 1.0 * self.eps) / (positive_odds + negative_odds + 2.0 * self.eps)
 
 class OddsTermResolver(TermResolver):
     def __init__(self, team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs):
         super(FractionTermResolver, self).__init__(team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs)
 
-    def __get_term(self, positive_odds, negative_odds):
+    def get_term(self, positive_odds, negative_odds):
         #smoothing in case of zero frequencies
         return  positive_odds + 1
 
