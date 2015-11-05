@@ -68,13 +68,15 @@ class FractionTermResolver(TermResolver):
         self.eps = smoothing
 
     def get_term(self, positive_odds, negative_odds):
+        if positive_odds == 0 and negative_odds == 0:
+            return 1
         return (positive_odds + 1.0 * self.eps) / (positive_odds + negative_odds + 2.0 * self.eps)
 
 class OddsTermResolver(TermResolver):
     def __init__(self, team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs):
-        super(FractionTermResolver, self).__init__(team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs)
+        super(OddsTermResolver, self).__init__(team_offset, solo_hrs, same_teams_hrs, diff_teams_hrs)
 
     def get_term(self, positive_odds, negative_odds):
         #smoothing in case of zero frequencies
-        return  positive_odds + 1
+        return  positive_odds + 1.0
 

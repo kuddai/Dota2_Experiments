@@ -1,6 +1,7 @@
 __author__ = 'kuddai'
 #it is expected that local database is working here
 import cPickle as pickle
+import random
 from progressbar import ProgressBar, Bar, Percentage, FormatLabel, ETA
 from pymongo import MongoClient
 
@@ -29,14 +30,24 @@ for i, match in enumerate(matches.find()):
         else:
             dire.append(hero_id)
 
-        if len(radiant) != 5 or len(dire) != 5:
-            print "match {0} doesn't have enough players".format(i)
+    if len(radiant) != 5 or len(dire) != 5:
+        print "match {0} doesn't have enough players".format(i)
 
     compressed_matches.append((radiant_win, radiant, dire))
     pbar.update(i)
 
 pbar.finish()
 
-file_name = "compressed_matches_{0}.p".format(NUM_MATCHES)
+print "shuffling matches"
+random.shuffle(compressed_matches)
 
-pickle.dump(compressed_matches, open(file_name, 'wb'))
+train_data = compressed_matches[NUM_MATCHES/10:NUM_MATCHES]
+test_data = compressed_matches[0:NUM_MATCHES/10]
+
+train_name = "train_data{0}.p".format(len(train_data))
+test_name = "test_data{0}.p".format(len(test_data))
+
+
+
+pickle.dump(train_data, open(train_name, 'wb'))
+pickle.dump(test_data, open(test_name, 'wb'))
