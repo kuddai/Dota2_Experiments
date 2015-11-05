@@ -1,5 +1,5 @@
 from unittest import TestCase
-from PairsContainer import SameTeamsPairsContainer
+from pairsContainer import SameTeamsPairsContainer
 
 __author__ = 'kuddai'
 
